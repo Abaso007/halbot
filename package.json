@@ -15,7 +15,7 @@
   "scripts": {
     "start": "node bin/halbot.mjs",
     "debug": "node --inspect --trace-warnings debug.mjs",
-    "test": "node --inspect --trace-warnings test.mjs",
+    "test": "node --trace-warnings test.mjs",
     "updep": "npx npm-check-updates -u && npm install",
     "gitsync": "( git commit -am \"Released @ `date`\" || true ) && git pull && git push",
     "build": "npm run updep && ( git commit -am 'update dependencies' || true )",
